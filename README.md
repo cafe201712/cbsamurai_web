@@ -15,7 +15,7 @@
 
 ```
 git clone https://github.com/cafe201712/cbsamurai_web
-cd cbsamurai
+cd cbsamurai_web
 
 composer install
 npm install
