@@ -1,0 +1,33 @@
+# Scaffold 用に追加
+msgid "Actions"
+msgstr "操作"
+
+msgid "View"
+msgstr "表示"
+
+msgid "Edit"
+msgstr "編集"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Submit"
+msgstr "送信"
+
+msgid "first"
+msgstr "最初"
+
+msgid "last"
+msgstr "最後"
+
+msgid "previous"
+msgstr "前"
+
+msgid "next"
+msgstr "次"
+
+msgid "Are you sure you want to delete # {0}?"
+msgstr "本当に削除しますか？# {0}"
+
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr "{{page}} / {{pages}} ページ"

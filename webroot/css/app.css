@@ -1,0 +1,564 @@
+/**
+ * アプリケーション固有のスタイルを記述
+ */
+
+/*
+ * HTML
+ */
+body {
+/*
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+*/
+    font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', '游ゴシック  Medium', meiryo, sans-serif;
+    padding-top: 50px; /* navbar-fixed を使った時に必須 */
+
+    word-wrap: break-word;
+}
+
+p {
+    /* 超長い英単語を折り返す為 */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    word-break: break-all;
+}
+
+pre {
+    font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', '游ゴシック  Medium', meiryo, sans-serif;
+    color: #6d6e71;
+}
+
+pre {
+    /* 超長い英単語を折り返す為 */
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: pre-line;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -hp-pre-wrap;
+    word-wrap: break-word;
+
+    word-break: break-all;
+}
+
+th, td {
+    /* 超長い英単語を折り返す為 */
+    word-break: break-all;
+}
+
+/*
+ * 汎用
+ */
+/* display */
+.d-inline { display: inline; }
+.d-block { display: block; }
+
+/* 上余白 */
+.spacer { margin-top: 5px; }
+.spacer10 { margin-top: 10px; }
+.spacer15 { margin-top: 15px; }
+.spacer20 { margin-top: 20px; }
+.spacer25 { margin-top: 25px; }
+.spacer30 { margin-top: 30px; }
+.spacer35 { margin-top: 35px; }
+.spacer40 { margin-top: 40px; }
+.spacer45 { margin-top: 45px; }
+.spacer50 { margin-top: 50px; }
+.spacer100 { margin-top: 100px; }
+.spacer200 { margin-top: 200px; }
+
+.notInput {
+    color: red;
+}
+
+/* 画像をサイズ固定でトリミング */
+img.trim-20 {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+img.trim-60 {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+img.trim-80 {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+img.trim-150 {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+img.trim-400 {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/*
+ * bootstrap3 関連
+ */
+/* pre のスタイル打ち消し */
+.pre_clear_style {
+    margin: 0;
+    border: 0;
+    padding-left: 0;
+    background-color: transparent;
+    font-size: inherit;
+}
+
+/* row 内のカラムの高さをそろえる */
+.row-eq-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* カルーセルの画像 */
+.carousel img {
+    width: 100%;
+}
+
+/*
+ * User Role
+ */
+.role-user {
+    color: deepskyblue;
+}
+.role-cast {
+    color: hotpink;
+}
+.role-manager {
+    color: red;
+}
+.role-superuser {
+    color: black;
+}
+
+/*
+ * レイアウト
+ */
+/* ページヘッダー */
+#page-header {
+    height: 180px;
+    background-color: lightgray;
+}
+#page-header .page-title {
+    margin-top: 40px;
+}
+
+/* ナビゲーションバー */
+.navbar .container-fluid {
+    background-color: #f7921e;
+}
+/* ブランドロゴ画像の表示調整 */
+.navbar-brand {
+    padding-top: 5px;
+}
+.navbar-brand img {
+    height: 40px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #fb0390;
+}
+
+/* ページタイトル */
+#page-contents h1:first-child,
+#page-contents h2:first-child {
+    margin-top: 0;
+}
+
+/* フッター */
+.footer {
+    margin-top: 30px;
+    background: #f7921e;
+    color: #000000;
+    font-size: 14px;
+}
+.footer .container {
+    padding: 10px 0;
+    text-align: center;
+}
+.footer a {
+    color: #ffffff;
+}
+.footer a:hover {
+    color: #fb0390;
+}
+
+/*
+ * ニュース
+ */
+#news-list h4 {
+    border-bottom: solid 2px;
+}
+#news-list p {
+    margin-bottom: 0;
+}
+
+/*
+ * CRUD 系
+ */
+/* 一覧表での項目幅 */
+th.pref {
+    width: 70px;
+}
+th.role {
+    width: 125px;
+}
+th.date {
+    width: 100px;
+}
+th.actions {
+    width: 110px;
+}
+/* View での見出し項目幅 */
+table.view th {
+    width: 20%;
+}
+
+/*
+ * トップ
+ */
+#pages-top {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/lptop_back.jpg");
+    background-position: top;
+}
+
+/*
+ * ホーム
+ */
+#home-index .user-desc {
+    margin-left: 165px;
+}
+#home-index .user-desc h3 {
+    font-size: 20px;
+}
+#home-index .user-desc a.btn {
+    margin-top: 5px;
+}
+
+/*
+ * キャバ嬢一覧（グリッド）
+ */
+#casts-index .col-xs-6 {
+    padding: 0 5px;
+}
+#casts-index .thumbnail img {
+    /* row 内の写真の高さを揃えてトリミング */
+    height: 150px;
+    object-fit: cover;
+}
+#casts-index .thumbnail h3 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+#casts-index .thumbnail .btn {
+    margin-top: 10px;
+}
+@media (min-width:480px) {
+    #casts-index .thumbnail img {
+        height: 180px;
+    }
+    #casts-index .col-xs-6 {
+        padding: 0 15px;
+    }
+}
+@media (min-width:768px) {
+    #casts-index .thumbnail img {
+        height: 220px;
+    }
+    #casts-index .col-xs-6 {
+        padding: 0 15px;
+    }
+}
+
+/*
+ * キャバ嬢一覧（リスト）
+ */
+#casts-list .media h3 {
+    font-size: 20px;
+}
+
+/*
+ * プロフィール（自分）
+ * キャバ嬢プロフィール
+ * ゲストプロフィール
+ */
+#profile-view img.thumbnail,
+#profile-edit img.thumbnail,
+#casts-view img.thumbnail,
+#guests-view img.thumbnail {
+    width: 100%;
+}
+#profile-view #profile th,
+#guests-view #profile th,
+#casts-view #profile th,
+#casts-view #shop-info th {
+    width: 80px;
+}
+
+/*
+ * メッセージ一覧
+ */
+.chat-body p {
+    margin: 0;
+}
+/* アイコンサイズ */
+img.trim-message-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+#messages-index ul.chat-message li {
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+/* メッセージ一覧でのアイコン分のマージン */
+#messages-index ul.chat-message li.left .chat-item {
+    margin-left: 80px;
+}
+#messages-index ul.chat-message li.right .chat-item {
+    /*margin-right: 80px;*/
+    margin-right: 0;
+    margin-left: 80px;
+}
+@media (min-width:768px) {
+    img.trim-message-icon {
+        width: 80px;
+        height: 80px;
+    }
+    #messages-index ul.chat-message li {
+        margin-bottom: 20px;
+    }
+    #messages-index ul.chat-message li.left .chat-item {
+        margin-left: 100px;
+    }
+    #messages-index ul.chat-message li.right .chat-item {
+        /*margin-right: 100px;*/
+        margin-left: 100px;
+    }
+}
+
+/*
+ * ログイン、ユーザー登録
+ */
+#admin-users-register .form-group, #admin-users-login .form-group {
+    width: 100%;
+}
+
+/*
+ * ユーザー表示
+ * ユーザー編集
+ */
+#admin-users-edit img.thumbnail,
+#admin-users-view img.thumbnail {
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+ * Media Query
+ */
+/* safari のグリッド不具合対応 */
+.col-xs-6 {
+    width: 49.8%;
+}
+@media (min-width:768px) {
+    .col-sm-3 {
+        width: 24.9%;
+    }
+}
+
+/* safari のグリッド不具合対応 */
+@media (min-width:992px) {
+    .col-md-3 {
+        width: 24.9%;
+    }
+}
+
+/*--------------------------------------------------------------------------------*/
+
+/*主に色を上書き*/
+h1, h2, h3, h4, h5, h6 {
+    color: hsl(35, 77%, 50%);
+    font-weight: 700;
+}
+a{color: #eea236;}
+a:hover{color: #af7728;}
+
+/*上書き*/
+
+
+.timeline-cover{
+    /*TODO: URLの画像ファイル作成後、URL記入 */
+    background: url("") no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 1px;
+    position: relative;
+}
+
+.timeline-cover .timeline-nav-bar .profile-info img.profile-photo{
+    height: 200px;
+    width: 200px;
+    opacity : 0.8;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.timeline-cover .timeline-nav-bar .profile-info img.profile-photo:hover{
+    opacity : 1.0;
+    width : 210px;
+    height : 210px;
+}
+
+#footer::before {
+    content: "";
+    /*    background: linear-gradient(to right, #ffffff 0%, #53cbf1 50%, #ffffff 100%); */
+    background: linear-gradient(to right, #ffffff 0%, #ffa800 50%, #ffffff 100%);
+    margin-top : 10px;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+}
+
+.timeline-cover .timeline-nav-bar .profile-menu li a.active{
+    color: #eea236;
+}
+
+.timeline-cover .timeline-nav-bar .profile-menu li a:hover{
+    color: #eea236;
+}
+
+.menu ul.main-menu li.dropdown a:hover, .menu ul.main-menu li.dropdown a:active, .menu ul.main-menu li.dropdown a:focus{
+    color: #eea236;
+}
+
+.menu ul.main-menu li.open a, .menu ul.main-menu li.open a:active, .menu ul.main-menu li.open a:focus{
+    background: transparent;
+    color: #eea236;
+}
+
+.btn-cb-primary{
+    background-color: #eea236;
+    padding: 7px 25px;
+    border: none;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #fff;
+    position: relative;
+    font-weight: 600;
+    outline: none;
+    border-radius: 30px;
+}
+.btn-cb-primary:hover{
+    background-color: #af7728;
+    transition: all 0.5s;
+    color: #fff;
+}
+.btn-cb-primary:active {
+    background-color: #ffff00;
+    border-color: #245580;
+}
+.btn-cb-primary:focus{
+    background-color: #d69231;
+    color: #fff;
+}
+.btn-cb-primary:active:focus {
+    background-color: #204d74;
+    border-color: #122b40;
+    color: #fff;
+}
+.sign-up-form:after {
+    border-color:#eea236 transparent transparent;
+}
+
+ul.social-icons li a {
+    color: #6d6e71;
+    font-size: 40px;
+    line-height: 30px;
+}
+
+#admin-users-login,
+#admin-users-register {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/lptop_back.jpg");
+    background-position: top;
+}
+
+#register .form-control, #login .form-control {
+    border-color:#AAAAAA;
+}
+
+ul li {
+    list-style-type: none;
+    list-style-image: none;
+}
+
+.round-brackets{
+    padding-top : 1ex;
+    padding-bottom : 1ex;
+}
+.terms-dl dt {
+    padding-top : 1ex;
+    padding-bottom : 0.5ex;
+
+}
+.terms-dl dd { text-indent : 1ex;}
+
+.dl-horizontal  dt {
+}
+
+.dl-horizontal  dd {
+    padding-left :1em;
+    padding-bottom : 1ex;
+    text-indent : 1ex;}
+.carousel .item {
+    height: 100%;
+}
+
+/* fade on slider */
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+    opacity: 1 !important;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+.help_index {
+    padding:1em 1ex 1ex 1em;
+    margin : 1em 1ex 1ex 1em;
+    border : #fb0390 solid 1px;
+    font-size:150%;
+}
+.help_indexfor{
+    margin-top: -100px; /* リンク位置上昇分 */
+    padding-top: +100px; /* 上昇分を戻す分 */
+}
